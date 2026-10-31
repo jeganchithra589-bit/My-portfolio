@@ -1,0 +1,267 @@
+
+
+/* GLOBAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #263248;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background: linear-gradient(120deg, #101d38, #245080);
+    color: white;
+    padding: 65px 10%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #70d6ff;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.intro h1 span {
+    color: #70d6ff;
+}
+
+.intro h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.intro h3 {
+    color: #70d6ff;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    margin-bottom: 12px;
+}
+
+
+/* PROFILE IMAGE */
+
+.profile img {
+    width: 220px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #10213b;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #172b4d;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding: 55px 10%;
+}
+
+section h2 {
+    color: #174a7e;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* CONTENT CARDS */
+
+.card {
+    background-color: white;
+    max-width: 900px;
+    padding: 28px;
+    margin: 18px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #245080;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+
+/* TECHNICAL SKILLS */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.skill {
+    background-color: #dceeff;
+    color: #174a7e;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #245080;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* ACHIEVEMENTS */
+
+.card ul {
+    padding-left: 25px;
+}
+
+.card li {
+    margin-bottom: 12px;
+}
+
+
+/* CONTACT */
+
+.contact-card p {
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #101d38;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h3 {
+    color: #70d6ff;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 35px;
+    }
+
+    .profile img {
+        width: 180px;
+        height: 220px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+}
